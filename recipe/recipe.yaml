@@ -68,7 +68,7 @@ outputs:
         requirements:
           run:
             - python ${{ python_min }}.*
-            - array-api-compat
+            - array-api-compat ==1.14.0  # 1.15.0 has no `py.typed`
             - pytest
             - matplotlib
             - mypy ==${{ mypy_version }}
